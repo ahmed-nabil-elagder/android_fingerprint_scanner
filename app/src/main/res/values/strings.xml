@@ -1,3 +1,33 @@
 <resources>
-    <string name="app_name">android_fingerprint_scanner</string>
+    <string name="app_name">Fingerprint Scanner</string>
+
+    <string name="enterFingerprintTitleText">Touch ID</string>
+    <string name="enterFingerprintMsgText">Please authenticate to process</string>
+    <string name="cancelText">Cancel</string>
+
+
+    <string name="emptyText"> </string>
+
+    <string name="isSdkVersionSupported">Is Android SKD version support Fingerprint?</string>
+    <string name="isHardwareSupported">Is Mobile Hardware support Fingerprint?</string>
+    <string name="isPermissionGranted">Is Fingerprint Permission Granted?</string>
+    <string name="isFingerprintAvailable">Is any Fingerprint available in your device?</string>
+
+    <string name="AuthenticateByFingerprintText">Authenticate By Fingerprint</string>
+    <string name="FingerprintAuthorizedSuccessfullyText">Fingerprint Authorized Successfully!</string>
+    <string name="FingerprintSorryText">
+        Sorry\nYou can not Authenticate by Fingerprint.\nAll checks should be OK.</string>
+    <string name="FingerprintAuthenticationFailedText">Authentication Failed - try again!</string>
+
+    <string name="isSdkVersionSupportedInfo">
+        Check if the Android version in this device is greater than Marshmallow,
+        since Fingerprint Authentication is only supported from Android 6.0 / API-23</string>
+    <string name="isHardwareSupportedInfo">Check if this Android device has Fingerprint sensors or not</string>
+    <string name="isPermissionGrantedInfo">Check if the permission has been added to the application,
+        This permission will be granted as soon as the user installs the application on their device</string>
+    <string name="isFingerprintAvailableInfo">Check if there are any registered Fingerprints on this device or not</string>
+
+    <string name="OK">OK</string>
+
+
 </resources>

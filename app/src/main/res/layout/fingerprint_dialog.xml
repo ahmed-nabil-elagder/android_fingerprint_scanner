@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center"
+    android:background="@mipmap/bg"
+    >
+
+
+    <ImageView
+        android:id="@+id/fingerprintImageView"
+        android:contentDescription="@string/emptyText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/fingerprint"
+        />
+
+    <TextView
+        android:id="@+id/paymentConfirm1TextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fingerprintImageView"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:textColor="@color/WhiteColor"
+        android:text="@string/enterFingerprintTitleText"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        />
+
+
+
+    <TextView
+        android:id="@+id/paymentConfirm2TextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/paymentConfirm1TextView"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:text="@string/enterFingerprintMsgText"
+        android:textColor="@color/WhiteColor"
+        android:textSize="16sp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/paymentConfirm2TextView"
+        >
+
+        <Button
+            android:id="@+id/dialogButtonCancel"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="@string/cancelText"
+            android:textColor="@color/WhiteColor"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="35dp"
+            android:layout_marginEnd="35dp"
+            android:background="@color/colorPrimary"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            />
+    </LinearLayout>
+
+
+
+
+
+</RelativeLayout>

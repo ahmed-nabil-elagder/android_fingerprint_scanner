@@ -1,19 +1,144 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainActivity">
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="15dp"
+    android:layout_marginEnd="15dp"
+    >
 
-    <TextView
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:id="@+id/scrollViewLinearLayout"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:orientation="vertical"
+        >
 
-</android.support.constraint.ConstraintLayout>
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:textColor="@color/BlackColor"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            />
+
+        <ImageView
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:contentDescription="@string/emptyText"
+            android:src="@mipmap/fingerprint"
+            android:layout_gravity="center"/>
+
+
+        <TextView
+            android:id="@+id/isSdkVersionSupportedTextView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/isSdkVersionSupported"
+            android:drawableEnd="@mipmap/icon_info"
+            android:gravity="center_vertical"
+            android:textColor="@color/BlackColor"
+            android:onClick="viewInformationMsg"
+            />
+        <ImageView
+            android:id="@+id/isSdkVersionSupportedImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/emptyText"
+            android:src="@mipmap/icon_ok_flag" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="10dp"
+            android:background="@android:color/darker_gray" />
+
+
+        <TextView
+            android:id="@+id/isPermissionGrantedTextView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/isPermissionGranted"
+            android:drawableEnd="@mipmap/icon_info"
+            android:gravity="center_vertical"
+            android:textColor="@color/BlackColor"
+            android:onClick="viewInformationMsg"
+            />
+        <ImageView
+            android:id="@+id/isPermissionGrantedImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/emptyText"
+            android:src="@mipmap/icon_ok_flag"
+            android:textColor="@color/BlackColor"
+            android:textStyle="bold"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="10dp"
+            android:background="@android:color/darker_gray" />
+
+
+        <TextView
+            android:id="@+id/isHardwareSupportedTextView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/isHardwareSupported"
+            android:drawableEnd="@mipmap/icon_info"
+            android:gravity="center_vertical"
+            android:textColor="@color/BlackColor"
+            android:onClick="viewInformationMsg"
+            />
+        <ImageView
+            android:id="@+id/isHardwareSupportedImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/emptyText"
+            android:src="@android:drawable/ic_delete" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="10dp"
+            android:background="@android:color/darker_gray" />
+
+
+        <TextView
+            android:id="@+id/isFingerprintAvailableTextView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/isFingerprintAvailable"
+            android:drawableEnd="@mipmap/icon_info"
+            android:gravity="center_vertical"
+            android:textColor="@color/BlackColor"
+            android:onClick="viewInformationMsg"
+            />
+        <ImageView
+            android:id="@+id/isFingerprintAvailableImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/emptyText"
+            android:src="@mipmap/icon_ok_flag" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="10dp"
+            android:background="@android:color/darker_gray" />
+
+
+        <Button
+            android:id="@+id/authenticateByFingerprintButton"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/AuthenticateByFingerprintText"
+            android:onClick="authenticateByFingerprintButtonOnClick"
+            android:textAllCaps="false"
+            android:textColor="@color/BlackColor"
+            />
+
+
+
+
+    </LinearLayout>
+</ScrollView>
