@@ -24,6 +24,6 @@ All Fingerprint checks are OK |  We can authenticate by Fingerprint |    DONE
 ## Others scenarios  
 If *All Fingerprint checks* **are not OK**, so **We can not authenticate** by Fingerprint.  
 
-Example 1 |  Example 2
-:----------------------------:|:-----------------------------------:
-<img src="https://github.com/ahmednabil88/images-host/blob/master/Screenshot_2019-01-21-11-36-57.png" width=300>  |  <img src="https://github.com/ahmednabil88/images-host/blob/master/Screenshot_2019-01-21-11-37-02.png" width=300> 
+Example 1 |  Example 2 | Error Message
+:----------------------------:|:--------------:|:----------------:
+<img src="https://github.com/ahmednabil88/images-host/blob/master/Screenshot_2019-01-21-11-37-02.png" width=300>  |  <img src="https://github.com/ahmednabil88/images-host/blob/master/Screenshot_2019-01-21-11-36-57.png" width=300> | <img src="https://github.com/ahmednabil88/images-host/blob/master/Screenshot_2019-01-24-00-37-59.png" width=300>
