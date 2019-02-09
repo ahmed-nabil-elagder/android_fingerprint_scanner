@@ -11,6 +11,14 @@ Android Fingerprint Authentication is only supported from Android 6.0 / API-23
 <img src="https://img.shields.io/badge/API-23%2B-blue.svg" >  
 
 
+## To be able use fingerprint scanner, Four conditions should be passed    
+Condition |  Description
+|:--------|:-----------|
+isSdkVersionSupported     | Check if the Android version in this device is greater than Marshmallow, since Fingerprint Authentication is only supported from Android 6.0 / API-23
+isHardwareSupported       | Check if this Android device has Fingerprint sensors or not
+isPermissionGranted       | Check if the permission has been added to the application, This permission will be granted as soon as the user installs the application on their device
+isFingerprintAvailable    | Check if there are any registered Fingerprints on this device or not
+
 # Screenshots  
 
 ## Happy scenario  
